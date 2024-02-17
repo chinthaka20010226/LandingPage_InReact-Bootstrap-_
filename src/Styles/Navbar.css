@@ -1,0 +1,22 @@
+/* --- Global --- */
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+}
+
+.navbar_ {
+    /* background-color: cyan; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* height: 50px; */
+}
+
+.navbar-logo {
+    /* margin-left: -80px !important; */
+}
+
+.navbar-login-singup {
+    /* margin-right: -90px !important; */
+}
