@@ -1,0 +1,12 @@
+/* --- Global --- */
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+}
+
+.home {
+    min-height: 93.5vh;
+    margin-top: 44px !important;
+    /* z-index: -1; */
+}
