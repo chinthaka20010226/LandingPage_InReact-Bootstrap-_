@@ -1,0 +1,24 @@
+/* --- Global --- */
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none;
+}
+
+.container_ {
+    /* background-color: red; */
+}
+
+.right-top-image {
+    height: 200px;
+}
+
+.left-bottom-image {
+    height: 200px;
+}
+
+.card-img-bottom {
+    padding: 24px !important;
+    height: 130px;
+    width: 130px;
+}

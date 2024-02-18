@@ -6,7 +6,15 @@
 }
 
 .home {
-    min-height: 93.5vh;
-    margin-top: 44px !important;
+    min-height: 100vh;
+    /* margin-top: 44px !important; */
     /* z-index: -1; */
+}
+
+.carousel-content-wrapper {
+    min-height: 93vh !important;
+}
+
+.carousel-image {
+    height: 300px;
 }

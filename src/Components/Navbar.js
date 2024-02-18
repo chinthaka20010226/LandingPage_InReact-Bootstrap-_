@@ -7,7 +7,7 @@ import '../Styles/Navbar.css';
 // react icons
 import { FaXmark , FaBars } from "react-icons/fa6";
 
-const Navbar = ({children}) => {
+function Navbar() {
     const[isOpen,setIsOpen] = useState(false);
     const[isMenuOpen,setIsMenuOpen] = useState(false);
 
@@ -68,7 +68,7 @@ const Navbar = ({children}) => {
                             className='navbar-items gap-4'>
                             {
                                 navItems.map((item,index) => (
-                                    <NavLink to={item.path} key={index}>
+                                    <NavLink key={index}>
                                         {item.name}
                                     </NavLink>
                                 ))
@@ -101,7 +101,7 @@ const Navbar = ({children}) => {
                         className='navbar-menu-body'>
                         {
                             navItems.map((item,index) => (
-                                <NavLink to={item.path} key={index}>
+                                <NavLink key={index}>
                                     {item.name}
                                 </NavLink>
                             ))
@@ -110,8 +110,6 @@ const Navbar = ({children}) => {
 
                 </nav>
             </header>
-
-            <main>{children}</main>
 
         </div>
     )

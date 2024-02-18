@@ -1,0 +1,15 @@
+/* --- Global --- */
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+}
+
+.about-image {
+    height: 400px;
+}
+
+.text-balanced {
+    text-align: justify;
+    text-align-last: left; /* This property balances the left edge */
+}
