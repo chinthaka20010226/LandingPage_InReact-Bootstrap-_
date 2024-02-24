@@ -10,9 +10,11 @@ import Contact from "./Components/Contact.js";
 function App() {
   return (
     <>
+      {/* <Navbar /> */}
       <Home />
       <Services />
       <About />
+      <Contact />
     </>
   );
 }
