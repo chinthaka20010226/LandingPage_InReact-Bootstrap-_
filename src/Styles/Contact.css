@@ -1,0 +1,16 @@
+/* --- Global --- */
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+}
+
+
+/* --- Body --- */
+.contact-container {
+    /* margin: auto !important; */
+}
+
+.contact-input-field {
+    width: 400px;
+}
