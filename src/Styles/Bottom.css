@@ -1,0 +1,17 @@
+/* --- Global --- */
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+
+/* --- Body --- */
+.bottom-icons {
+    /* width: 100px; */
+}
+
+.bottom-icon {
+    /* width: 40px !important; */
+}
