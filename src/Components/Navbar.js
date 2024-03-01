@@ -7,6 +7,7 @@ import Home from './Home';
 import Services from './Services';
 import About from './About';
 import Contact from './Contact';
+import ScrollToTop from './ScrollToTop';
 
 const Navbar = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -46,23 +47,20 @@ const Navbar = ({ children }) => {
 
     return (
         <div>
+            <ScrollToTop />
             <header className='w-100'>
                 <nav className='navbar_ w-100 p-2 bg-light'>
                     <div className='d-flex justify-content-between align-items-center'>
                         <a href='#' className='navbar-logo'><span className='navbar-logo-text'>Expensy</span></a>
 
                         <div>
-                            <nav className="navbar navbar-expand-lg navbar-light">
-                                <div className="collapse navbar-collapse" id="navbarNav">
-                                    <ul className="navbar-nav" style={{cursor:"pointer"}}>
-                                        {navItems.map((item, index) => (
-                                            <li key={index} className="nav-item p-2">
-                                                <a className="nav-link" onClick={() => scrollToSection(item.id)}>{item.name}</a>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </nav>
+                            <ul className="" style={{display: isOpen ? "none" : "flex",cursor:"pointer"}}>
+                                {navItems.map((item, index) => (
+                                    <li key={index} className="nav-item p-2">
+                                        <a className="nav-link" onClick={() => scrollToSection(item.id)}>{item.name}</a>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
 
                         <div style={{ display: isOpen ? "none" : "flex" }} className='navbar-login-singup gap-4'>
@@ -85,7 +83,7 @@ const Navbar = ({ children }) => {
                 </nav>
             </header>
 
-            <div id="home" className='z-'>
+            <div id="home">
                 <Home />
             </div>
 
