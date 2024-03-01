@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+
 import { FaXmark, FaBars } from "react-icons/fa6";
 
 import '../Styles/Navbar.css';
-import Home from './Home';
-import Services from './Services';
-import About from './About';
-import Contact from './Contact';
-import ScrollToTop from './ScrollToTop';
 
 const Navbar = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +42,7 @@ const Navbar = ({ children }) => {
 
     return (
         <div>
-            <ScrollToTop />
+            
             <header className='w-100'>
                 <nav className='navbar_ w-100 p-2 bg-light'>
                     <div className='d-flex justify-content-between align-items-center'>
@@ -83,21 +78,7 @@ const Navbar = ({ children }) => {
                 </nav>
             </header>
 
-            <div id="home">
-                <Home />
-            </div>
-
-            <div id="services">
-                <Services />
-            </div>
-
-            <div id="about">
-                <About />
-            </div>
-
-            <div id="contact">
-                <Contact />
-            </div>
+            
         </div>
     )
 }

@@ -8,13 +8,13 @@ import Services from './Components/Services.js';
 import About from './Components/About.js';
 import Contact from "./Components/Contact.js";
 import Bottom from './Components/Bottom.js';
-// import Welcome from './Pages/Welcome.js';
+import LandingPage from './Pages/LandingPage.js';
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar>
+        <LandingPage>
           <Routes>
             <Route path="/" element={<Navbar />} />
             <Route path="/home" element={<Home />} />
@@ -22,7 +22,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </Navbar>
+        </LandingPage>
       </Router>
 
       <Bottom />

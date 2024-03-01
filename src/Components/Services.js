@@ -10,7 +10,6 @@ import Management from '../Assets/5189007.png';
 import Report from '../Assets/download.png';
 import Remembering from '../Assets/3856621-200.png';
 import LeftBottom from '../Assets/tech-01.png';
-import { keyboard } from '@testing-library/user-event/dist/keyboard';
 
 function Services() {
     return (
